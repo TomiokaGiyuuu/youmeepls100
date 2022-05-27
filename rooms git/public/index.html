@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+            integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ChatCord App</title>
+</head>
+<body>
+<div class="join-container">
+    <header class="join-header">
+        <div class="brand">
+        <img src="http://localhost:3000/static/media/img.83b323217c93bc869920.png" alt="">
+        <h1>YouMe</h1>
+        </div>
+    </header>
+    <main class="join-main">
+        <form action="chat.html">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Enter username..."
+                        required
+                        style="color: white"
+                />
+            </div>
+            <div class="form-control">
+                <label for="room">Room</label>
+                <select name="room" id="room" >
+                    <option selected hidden disabled>Choose the room</option>
+                    <option value="Genshin Impact">Genshin Impact</option>
+                    <option value="Valorant">Valorant</option>
+                    <option value="Rust">Rust</option>
+                    <option value="Fortnite">Fortnite</option>
+                    <option value="Roblox">Roblox</option>
+                    <option value="Counter Strike">Counter Strike</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Join Chat</button>
+        </form>
+    </main>
+</div>
+</body>
+</html>
